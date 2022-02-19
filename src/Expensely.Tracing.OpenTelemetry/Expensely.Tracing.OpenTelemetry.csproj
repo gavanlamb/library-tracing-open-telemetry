@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <LangVersion>latestmajor</LangVersion>
+        <Company>Expensely</Company>
+        <Author>Gavan Lamb</Author>
+        <Authors>Gavan Lamb</Authors>
+        <Description>Setup and add Open Telemetry</Description>
+        <PackageId>Expensely.Tracing.OpenTelemetry</PackageId>
+        <RootNamespace>Expensely.Tracing.OpenTelemetry</RootNamespace>
+        <PackageProjectUrl>https://github.com/expensely/library-tracing-open-telemetry</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/expensely/library-tracing-open-telemetry/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/expensely/library-tracing-open-telemetry</RepositoryUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <FileVersion>0.0.1</FileVersion>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Version>0.0.1</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+        <PackageReference Include="OpenTelemetry.Contrib.Extensions.AWSXRay" Version="1.1.0" />
+        <PackageReference Include="OpenTelemetry.Contrib.Instrumentation.AWS" Version="1.0.1" />
+        <PackageReference Include="OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore" Version="1.0.0-beta2" />
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.2.0-rc2" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc9" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc9" />
+        <PackageReference Include="Npgsql.OpenTelemetry" Version="6.0.3" />
+    </ItemGroup>
+
+</Project>
