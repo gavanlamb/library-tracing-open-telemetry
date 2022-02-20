@@ -23,8 +23,7 @@ Add Configuration
 }
 ```
 
-
-Add Serilog with configuration
+Add open telemetry with configuration
 ``` csharp
 public void ConfigureServices(IServiceCollection services)
 {
@@ -45,5 +44,5 @@ dotnet build --configuration release
 dotnet pack --configuration release 
 
 // Step 3: Publish
-dotnet nuget push "Expensely.Logging.Serilog.*.nupkg" -Source "github"
+dotnet nuget push "Expensely.Tracing.OpenTracing.*.nupkg" -Source "github"
 ```
